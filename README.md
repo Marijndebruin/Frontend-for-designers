@@ -14,7 +14,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
+  1. STAR WARS font: STAR JEDI: https://www.dafont.com/star-jedi.font
   2. -bron 2-
   3. -...-
 
