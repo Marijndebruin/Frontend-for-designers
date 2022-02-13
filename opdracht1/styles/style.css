@@ -4,9 +4,8 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'starjedi';
+	src: url('../fonts/Starjedi.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -36,8 +35,9 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-main:#111;
-	--color-background:#eee;
+	--color-main:#000;
+	--color-background:#111;
+	--color-starwars-geel: #FFE919;
 }
 
 
@@ -48,10 +48,14 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
+  font-family: starjedi, sans-serif;
   color:var(--color-main);
   background-color:var(--color-background);
 }
 
+h1 {
+	color: var(--color-starwars-geel);
+	text-transform: uppercase;
+}
 /* jouw code */
 
