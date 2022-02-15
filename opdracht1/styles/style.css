@@ -73,11 +73,11 @@ h1 {
 	transform:scale(1);
 	}
 	50% {
-	transform:scale(1.1);
+	transform:scale(1.1)rotate(5deg);
 	-webkit-filter: blur(0px);
 	}
 	80% {
-	transform:scale(0);
+	transform:scale(0)rotate(0deg);
 	-webkit-filter: blur(10px)
 	  }
 	100%{
@@ -86,7 +86,7 @@ h1 {
   }
 
 
-span:nth-of-type(1){
+h1{
 	display: inline-block;
 	animation-name: test;
 	animation-delay: 2s;
