@@ -38,6 +38,15 @@ button, summary {
 	--color-main:#000;
 	--color-background:#111;
 	--color-starwars-geel: #FFE919;
+	--color-wit: #fff;
+	--color-grijs: grey;
+	--color-gradientGrijs: linear-gradient(0deg, rgba(82,82,82,1) 0%, rgba(182,182,182,1) 100%);
+	/* Lightsaber kleuren rood */
+	--color-rood: red;
+	--color-gradientRood: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
+	/* Lightsaber kleuren blauw */
+	--color-blauw: #0009ff;
+	--color-gradientBlauw: linear-gradient(90deg, rgba(0,9,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,9,255,1) 100%);
 }
 
 
@@ -91,11 +100,139 @@ h1{
 	animation-name: test;
 	animation-delay: 2s;
 	animation-duration: 1s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 1;
 	animation-timing-function:ease-in;
 }
+/* Lightsabers align */
+
+.lightsabers {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 20em;
+	justify-items: center;
+}
+
+/* Lightsaber Rood*/
+
+.lightsaberHandleRed {
+	background: var(--color-grijs);
+	background: var(--color-gradientGrijs);
+	width: 1.5em;
+	height: 5em;
+	position: relative;
+	z-index: 100;
+	border-radius: 2px;
+	animation-fill-mode: forwards;
+}
+
+.lightsaberRed {
+	margin-bottom: -50px;
+	border-radius: 100px;
+	background: var(--color-rood);
+	background: var(--color-gradientRood);
+	box-shadow: 0px 0px 40px 20px var(--color-rood);
+	width: 1.3em;
+	height: 15em;
+	display: inline-block;
+	animation-name: lightsaberRed;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function:ease-in;
+	animation-fill-mode: forwards;	
+}
+
+@keyframes lightsaberRed {
+	0% {
+	height: 0em;
+	}
+	100%{
+	height: 15em;
+	}
+  }
 
 
+.saberRed {
+	display: inline-grid;
+	animation-name: saberRed;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 
-/* jouw code */
+@keyframes saberRed {
+	0% {
+	transform:rotate(0deg);
+	}
+	50% {
+	transform:rotate(80deg);;
+	}
+	100% {
+	transform:rotate(-40deg);
+	}
+  }
 
+/* Lightsaber blauw */
+
+.lightsaberHandleBlue {
+	background: var(--color-grijs);
+	background: var(--color-gradientGrijs);
+	width: 1.5em;
+	height: 5em;
+	position: relative;
+	z-index: 90;
+	border-radius: 2px;
+	animation-fill-mode: forwards;
+}
+
+.lightsaberBlue {
+	margin-bottom: -50px;
+	border-radius: 100px;
+	background: var(--color-blauw);
+	background: var(--color-gradientBlauw);
+	box-shadow: 0px 0px 40px 20px var(--color-blauw);
+	width: 1.3em;
+	height: 15em;
+	display: inline-block;
+	animation-name: lightsaberBlue;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function:ease-in;
+	animation-fill-mode: forwards;	
+}
+
+@keyframes lightsaberBlue {
+	0% {
+	height: 0em;
+	}
+	100%{
+	height: 15em;
+	}
+  }
+
+
+.saberBlue {
+	display: inline-grid;
+	animation-name: saberBlue;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	left: 10em;
+}
+
+@keyframes saberBlue {
+	0% {
+	transform:rotate(0deg);
+	}
+	50% {
+	transform:rotate(-80deg);;
+	}
+	100% {
+	transform:rotate(40deg);
+	}
+  }
