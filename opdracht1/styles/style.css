@@ -75,42 +75,44 @@ h1 {
 	position: relative;
 	display:block;
 	font-size: 6em;
-}
-
-@keyframes test {
-	0% {
-	transform:scale(1);
-	}
-	50% {
-	transform:scale(1.1)rotate(5deg);
-	-webkit-filter: blur(0px);
-	}
-	80% {
-	transform:scale(0)rotate(0deg);
-	-webkit-filter: blur(10px)
-	  }
-	100%{
-	transform:scale(0);
-	}
-  }
-
-
-h1{
 	display: inline-block;
 	animation-name: test;
 	animation-delay: 2s;
 	animation-duration: 1s;
 	animation-iteration-count: 1;
 	animation-timing-function:ease-in;
+	transform:scale(0);
+	animation-fill-mode: forwards;
 }
+
+@keyframes test {
+	0% {
+	transform:scale(0);
+	}
+	50% {
+	transform:scale(0)rotate(0deg);
+	-webkit-filter: blur(10px)
+	}
+	80% {
+	transform:scale(1.1)rotate(5deg);
+	-webkit-filter: blur(0px);
+	  }
+	100%{
+	transform:scale(1);
+	}
+  }
+
 /* Lightsabers align */
 
 .lightsabers {
 	display: grid;
 	grid-template-columns: auto auto;
-
 	column-gap: 20em;
 	justify-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -10em;
+
 }
 
 /* Lightsaber Rood*/
