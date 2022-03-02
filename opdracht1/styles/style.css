@@ -108,6 +108,7 @@ h1{
 .lightsabers {
 	display: grid;
 	grid-template-columns: auto auto;
+
 	column-gap: 20em;
 	justify-items: center;
 }
@@ -140,16 +141,17 @@ h1{
 	animation-iteration-count: 1;
 	animation-timing-function:ease-in;
 	animation-fill-mode: forwards;	
+	transform-origin: center bottom;
 }
 
 @keyframes lightsaberRed {
 	0% {
-	height: 0em;
+	transform: scaleY(0);
 	}
 	100%{
-	height: 15em;
+	transform: scaleY(1);
 	}
-  }
+}
 
 
 .saberRed {
@@ -202,14 +204,15 @@ h1{
 	animation-iteration-count: 1;
 	animation-timing-function:ease-in;
 	animation-fill-mode: forwards;	
+	transform-origin: center bottom;
 }
 
 @keyframes lightsaberBlue {
 	0% {
-	height: 0em;
+	transform: scaleY(0);
 	}
 	100%{
-	height: 15em;
+	transform: scaleY(1);
 	}
   }
 
