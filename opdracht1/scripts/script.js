@@ -1,2 +1,9 @@
 // JavaScript Document
-console.log("howdy");
+{
+    log();
+}
+
+
+function log(){
+        console.log("May the force be with you");
+}
