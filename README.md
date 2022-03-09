@@ -16,7 +16,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
   1. STAR WARS font: STAR JEDI: https://www.dafont.com/star-jedi.font
   2. Motion Blur voor inspiratie https://codepen.io/joshbader/pen/eYYLEY
-  3. -...-
 
 
 
@@ -27,7 +26,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/opracht1_schets.jpg" width="375px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
@@ -44,21 +43,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken bij afronden opdracht (voor week 3)</summary>
-
+  Ik vond het een uitdaging om een animatie te maken met alleen HTML en CSS. Ik heb veel geleerd tijdens deze opdracht, waar ik anders een SVG of afbeelding voor zou gebruiken heb ik het nu met CSS gemaakt. Ik heb mijzelf weer verder aangeleerd om minder divs te gebruiken en dat is gelukt. Aan het begin had ik er meer dan nu.
+  Ik ben zeer tevreden met de uitkomst en vind het een mooi resultaat.
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/opdracht1_eind.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Korte omschrijving
+  - Ik heb geleerd hoe je CSS animaties kan maken
+  - Ik heb geleerd dat je meerdere animaties op een object kan zetten doormiddel van een "animatie1, animatie2" dit werkt ook bij animation-delay
+  - Ik heb geleerd hoe je met CSS een "tekening" kan maken.
+  - Ik heb verschillende transform geleerd
+  - Ik heb geleerd om ::before en ::after te gebruiken.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
+  Korte omschrijving
+  - Ik vond het lastig om geen divs te gebruiken.
+  - Ik vond het lastig om ::before en ::after werkend te krijgen (is wel gelukt!)
+  - Ik had graag nog een achtergrond gemaakt, maar dit was lastig. Ik wou namelijk Star Wars lightspeed willen maken.
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>
 
