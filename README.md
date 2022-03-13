@@ -64,7 +64,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ik vond het lastig om geen divs te gebruiken.
   - Ik vond het lastig om ::before en ::after werkend te krijgen (is wel gelukt!)
   - Ik had graag nog een achtergrond gemaakt, maar dit was lastig. Ik wou namelijk Star Wars lightspeed willen maken.
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>
 
 
