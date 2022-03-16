@@ -1,4 +1,6 @@
 /* CSS Document */
+/* Gemaakt door Marijn de Bruin */
+/* May the force be with you! */
 
 /*********/
 /* FONTS */
@@ -11,10 +13,6 @@
 
 }
 
-
-
-
-
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -26,17 +24,13 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* Kleuren */
 	--color-main:#000;
-	--color-background: #999;
+	--color-background: #999;  /* Dit is de lightmode background color*/
 	--color-starwars-geel: #FFE919;
 	--color-wit: #fff;
 	--color-grijs: grey;
@@ -51,29 +45,11 @@ button, summary {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		/* startje */
-		--color-main:#000;
+		/* Darkmode theme, alleen de achtergrond veranderd. */
 		--color-background:#111;
-		--color-starwars-geel: #FFE919;
-		--color-wit: #fff;
-		--color-grijs: grey;
-		--color-gradientGrijs: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 100%);
-		/* Lightsaber kleuren rood */
-		--color-rood: red;
-		--color-gradientRood: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
-		/* Lightsaber kleuren blauw */
-		--color-blauw: #0009ff;
-		--color-gradientBlauw: linear-gradient(90deg, rgba(0,9,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,9,255,1) 100%);
 	}
 }
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
 body {
   font-family: starjedi, sans-serif;
   color:var(--color-main);
