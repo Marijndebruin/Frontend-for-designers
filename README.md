@@ -114,7 +114,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   --text: #000;
   --container: #FFF;
 
-  <img src="readme-images/opdracht2_benaming" width="375px" alt="benaming van variables is belangrijk">
+  <img src="readme-images/opdracht2_benaming.png" width="375px" alt="benaming van variables is belangrijk">
 
   Ik heb hieruit geleerd dat het belangrijk is dat je de variables duidelijke namen geeft, en dat ze voor beide themas toepassbaar zijn. Bijvoorbeeld voor een H1 color doe je --texth1 ipv --zwart hierdoor is de naam toepassbaar voor beide themas.
 
@@ -128,7 +128,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Het is vrij simpel. De functie plaats een request bij de API. De request word beantwoord met een .json bestand. We kijken in het .json bestand en vinden 2 regels. Message en status. de status is er puur zodat je weet of de request is gelukt. In de message zit een link naar de willekeurige afbeelding. Dan halen we uit de message de link en plaatsen we deze in de html.
 
-  <img src="readme-images/opdracht2_API" width="375px" alt="API zijn best handig">
+  <img src="readme-images/opdracht2_API.png" width="375px" alt="API zijn best handig">
 
   Ik heb geleerd hoe API's werken en hoe je deze gemakkelijk kan implementeren. Hierdoor kan je gemakkelijk je website een stuk uitgebreider maken met werkende functies.
 
@@ -142,7 +142,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/opdracht2_EIND" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/opdracht2_EIND.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
