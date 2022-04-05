@@ -72,18 +72,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na schetsen idee (voor week 4)</summary>
+  Ik hou van honden, veel beter dan katten :D
 
+  Er zijn genoeg mensen die van honden houden en graag een hond zouden willen hebben of zien, maar dat niet kunnen. Daarom is er nu Daily Dogs! Voel je je even down? Heb je een belangrijke meeting? Of werkt je code niet? of wil je gewoon even een hond zien, dan kan je naar Daily Dogs en kan je je dagelijkse dosis aan cute honden fotos binnenkrijgen. Nooit meer op google kijken en elke week dezelfde top resultaten zien. Daily Dogs maakt gebruik van een willekeurige honden kiezer waardoor je altijd een nieuwe hond ziet.
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="opdracht2_schets.jpg" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Meer nieuwe Javascript functies leren.
+  - Een API koppelen en gebruiken
+  - Meer Animaties want je hebt er nooit genoeg!
+  - Honden heel veel honden
 </details>
 
 
@@ -93,28 +95,43 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na testen (week 6/7)</summary>
 
-  Neem minimaal 5 bevindingen op:
-
-
+  - Nog geen darkmode
+  - IPV vooraf gekozen content zoals fotos kan je een foto API gebruiken.
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik had nog geen Darkmode gemaakt voor de app.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik ben begonnen met een @media query om er voor te zorgen dat als de gebruiker darkmode aan heeft staan bij zijn device dat deze dan automatisch overschakeld. Ik kwam er vrij snel achter nadat ik dit had toegepast dat ik all mijn variables voor kleuren verkeerd had benoemt...
+  Ik had namelijk in de root:
+  --wit: #fff;
+  --zwart: #000;
+  @media (prefers-color-scheme: dark) {
+  --wit: #000;
+  --zwart: #fff;
+  }
+  Ik had het even op deze manier opgelost maar dat is niet heel gebruiksvriendelijk dus heb ik de variables andere namen gegeven.
+  --text: #000;
+  --container: #FFF;
 
+  <img src="readme-images/opdracht2_benaming" width="375px" alt="benaming van variables is belangrijk">
 
+  Ik heb hieruit geleerd dat het belangrijk is dat je de variables duidelijke namen geeft, en dat ze voor beide themas toepassbaar zijn. Bijvoorbeeld voor een H1 color doe je --texth1 ipv --zwart hierdoor is de naam toepassbaar voor beide themas.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Daily dogs maakte gebruik van een aantal vooraf gekozen fotos van mijn huidige honden en mijn vorige honden..RIP. Ik zou de app beter kunnen maken als de fotos willekeurig gekozen worden. Dit kan ik doen doormiddel van een DOG API
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb opgezocht welke API willekeurige honden fotos kan inladen. Toen kwam ik uit op deze API: https://dog.ceo/dog-api/. Deze API heeft een hele grote lijst met allemaal honden fotos die mensen zelf hebben opgestuurd. Er zit heel veel verschill in kwaliteit van de honden fotos, van net 300px breed tot 4k fotos. 
 
+  Ik heb de gitHub gelezen en bekeken hoe het werkt. Ze hebben een voorbeeld van hoe het werk met vanillaJS dus die code heb ik geimplementeerd in mijn eigen werk. 
 
+  Het is vrij simpel. De functie plaats een request bij de API. De request word beantwoord met een .json bestand. We kijken in het .json bestand en vinden 2 regels. Message en status. de status is er puur zodat je weet of de request is gelukt. In de message zit een link naar de willekeurige afbeelding. Dan halen we uit de message de link en plaatsen we deze in de html.
 
-  ### Bevinding 3:
-  ...
+  <img src="readme-images/opdracht2_API" width="375px" alt="API zijn best handig">
+
+  Ik heb geleerd hoe API's werken en hoe je deze gemakkelijk kan implementeren. Hierdoor kan je gemakkelijk je website een stuk uitgebreider maken met werkende functies.
+
 </details>
 
 
@@ -125,17 +142,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/opdracht2_EIND" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
-
+  - Ik heb mijn javascript kennis weer bijgespijkerd.
+  - Ik heb geleerd hoe je een API kan implementeren
+  - Ik heb geleerd dat variables goeie namen geven belangrijk is!
+  - Ik heb weer meer geleerd over animaties
+  - Ik heb weer meer gelet op semantische HTML en CSS
+  - Ik heb duidelijke code geschreven.
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  - Ik heb geleerd dat '' & `` hele verschillende dingen zijn, Dit heeft echt niet voor een hele dag
+  aan debuggen gezorgt... -_-
+  - Ik had moeite met een class toevoegen en na x tijd te verwijderen. 
+  
 </details>

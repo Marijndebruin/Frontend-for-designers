@@ -5,17 +5,33 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
-	
 	<link href="styles/style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link href="styles/home.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;900&display=swap" rel="stylesheet"> 
+ 	 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
 </head>
 
 <body>
-	<h1>Opdracht 2</h1>
-
-	<script src="scripts/script.js"></script>
-</body>
-	
+		<header>
+				<h1>Daily Dogs</h1>
+				<h3 id="watchDogs">Bekeken honden:</h3>
+		</header>
+		<main>
+			<article id="article">
+				<img id="dogImage" src="images/Floor.png" alt="floor" onclick="newDogLike()">
+				<h2 id="dogName">Floor</h2>
+				<h3 id="username">DoggyLover2</h3>
+			</article>
+			<nav>
+				<ul>
+					<li id="no">No</li>
+					<li id="yes">Love</li>
+				</ul>
+			</nav>
+		</main>
+		<script src="scripts/script.js"></script>
+	</body>
 </html>

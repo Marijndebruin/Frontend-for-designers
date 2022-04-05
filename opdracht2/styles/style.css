@@ -1,57 +1,68 @@
 /* CSS Document */
 
-/*********/
-/* FONTS */
-/*********/
-@font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-
-
-
-
 /**************/
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-main:#111;
-	--color-background:#eee;
+	--muted: #898989;
+    --text: #000;
+    --container: #F5F5F5;
+	--background: #ededed;
+	--shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+	--shadow-top: rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	--red: #fe6d73;
+	--green: #17c3b2;
+	--blue: #227c9d;
+	--yellow: #ffcb77;
+    --boxshadow-like: 0px 0px 50px var(--green);
+    --boxshadow-no: 0px 0px 50px var(--red);
+    --textshadow-like: 0px 0px 30px var(--green);
+    --textshadow-no: 0px 0px 30px var(--red);
 }
 
-
-
-
+@media (prefers-color-scheme: dark) {
+	:root {
+    --background: #3a3a46;
+    --container: #282834;
+    --text: #F5F5F5;
+    }
+    body {
+    color: var(--text);
+    }   
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-main);
-  background-color:var(--color-background);
+	font-family: 'Nunito', sans-serif;
+  	color:var(--text);
+  	background-color:var(--background);
 }
 
 /* jouw code */
 
+nav {
+    z-index: 10;
+    background-color: var(--white);
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: var(--shadow-top);
+	left: 0;
+}
