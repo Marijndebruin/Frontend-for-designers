@@ -1,4 +1,6 @@
 /* CSS Document */
+/* Gemaakt door Marijn de Bruin */
+/* May the force be with you! */
 
 /*********/
 /* FONTS */
@@ -11,10 +13,6 @@
 
 }
 
-
-
-
-
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -26,17 +24,13 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* Kleuren */
 	--color-main:#000;
-	--color-background: #999;
+	--color-background: #999;  /* Dit is de lightmode background color*/
 	--color-starwars-geel: #FFE919;
 	--color-wit: #fff;
 	--color-grijs: grey;
@@ -51,29 +45,11 @@ button, summary {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		/* startje */
-		--color-main:#000;
+		/* Darkmode theme, alleen de achtergrond veranderd. */
 		--color-background:#111;
-		--color-starwars-geel: #FFE919;
-		--color-wit: #fff;
-		--color-grijs: grey;
-		--color-gradientGrijs: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 100%);
-		/* Lightsaber kleuren rood */
-		--color-rood: red;
-		--color-gradientRood: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
-		/* Lightsaber kleuren blauw */
-		--color-blauw: #0009ff;
-		--color-gradientBlauw: linear-gradient(90deg, rgba(0,9,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,9,255,1) 100%);
 	}
 }
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
 body {
   font-family: starjedi, sans-serif;
   color:var(--color-main);
@@ -147,7 +123,71 @@ h1 {
 	transform:scale(0);
 	}
   }
-  
+
+main > div {
+	border-radius: 100px;
+	width: 1.3em;
+	height: 15em;
+	top: -10em;
+	position: relative;
+}
+
+
+/* blauwe lightsaber gloweffect */
+.blauw {
+	background: var(--color-blauw);
+	background: var(--color-gradientBlauw);
+	box-shadow: 0px 0px 40px 20px var(--color-blauw);
+	animation: saberhandle, blauwsaberanimatie, blauwsaberanimatieReverse, saberhandleReverse;
+	animation-delay: 0s, 2s, 5s, 6s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function:ease-in;
+	animation-fill-mode: forwards;	
+	transform-origin: center bottom;
+	/* grid */
+	grid-area: 2 / 1 / 3 / 2;
+	justify-self: center;
+}
+
+/* Lightsaber handle voor rood en blauw */
+.blauw::before, .rood::before{ 
+	background: var(--color-grijs);
+	background: var(--color-gradientGrijs);
+	width: 1.5em;
+	height: 5em;
+	position: relative;
+	z-index: 90;
+	border-radius: 5px;
+	display: block;
+	content: '';
+	position: absolute;
+	top: 12em;
+}
+
+.blauw::after, .rood::after{
+	display: block;
+	content: '';
+	position: absolute;
+}
+
+.rood {
+	background: var(--color-rood);
+	background: var(--color-gradientRood);
+	box-shadow: 0px 0px 40px 20px var(--color-rood);
+	animation: saberhandle, roodsaberanimatie, roodsaberanimatieReverse, saberhandleReverse;
+	animation-delay: 0s, 2s, 5s, 6s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function:ease-in;
+	animation-fill-mode: forwards;	
+	transform-origin: center bottom;
+	/* grid */
+	grid-area: 2 / 2 / 3 / 3;
+	justify-self: center;
+}
+
+/* Handle animaties voor beide lightsabers */
 @keyframes saberhandle {
 	0% {
 	transform: scaleY(0);
@@ -166,44 +206,7 @@ h1 {
 	}
 }
 
-/* lightsaber gloweffect */
-.blauw {
-	border-radius: 100px;
-	background: var(--color-blauw);
-	background: var(--color-gradientBlauw);
-	box-shadow: 0px 0px 40px 20px var(--color-blauw);
-	width: 1.3em;
-	height: 15em;
-	animation: saberhandle, blauwsaberanimatie, blauwsaberanimatieReverse, saberhandleReverse;
-	animation-delay: 0s, 2s, 5s, 6s;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-timing-function:ease-in;
-	animation-fill-mode: forwards;	
-	transform-origin: center bottom;
-	/* grid */
-	grid-area: 2 / 1 / 3 / 2;
-	justify-self: center;
-	/* align */
-	top: -10em;
-	position: relative;	
-}
-
-/* Lightsaber handle */
-.blauw::before { 
-	background: var(--color-grijs);
-	background: var(--color-gradientGrijs);
-	width: 1.5em;
-	height: 5em;
-	position: relative;
-	z-index: 90;
-	border-radius: 5px;
-	display: block;
-	content: '';
-	position: absolute;
-	top: 12em;
-}
-
+/* Blauw lightsaber animaties */
 @keyframes blauwsaberanimatie {
 	0% {
 		transform:rotate(0deg);
@@ -215,7 +218,7 @@ h1 {
 		transform:rotate(-40deg);
 		}
 	  }	
-
+/* De blauwe lightsaber terugkeer animatie */
 @keyframes blauwsaberanimatieReverse {
 	0% {
 		transform:rotate(-40deg);
@@ -227,57 +230,7 @@ h1 {
 		transform:rotate(0deg);
 		}
 	 }	
-
-.blauw::after{
-	display: block;
-	content: '';
-	position: absolute;
-}
-
-/* lightsaber gloweffect */
-.rood {
-	border-radius: 100px;
-	background: var(--color-rood);
-	background: var(--color-gradientRood);
-	box-shadow: 0px 0px 40px 20px var(--color-rood);
-	width: 1.3em;
-	height: 15em;
-	animation: saberhandle, roodsaberanimatie, roodsaberanimatieReverse, saberhandleReverse;
-	animation-delay: 0s, 2s, 5s, 6s;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-timing-function:ease-in;
-	animation-fill-mode: forwards;	
-	transform-origin: center bottom;
-	/* grid */
-	grid-area: 2 / 2 / 3 / 3;
-	justify-self: center;
-	/* align */
-	top: -10em;
-	position: relative;
-}
-
-/* Lightsaber handle */
-.rood::before { 
-	background: var(--color-grijs);
-	background: var(--color-gradientGrijs);
-	width: 1.5em;
-	height: 5em;
-	position: relative;
-	z-index: 90;
-	border-radius: 5px;
-	display: block;
-	content: '';
-	position: absolute;
-	top: 12em;
-}
-
-.rood::after{
-	display: block;
-	content: '';
-	position: absolute;
-}
-
+/* Rood lightsaber animaties */
 @keyframes roodsaberanimatie {
 	0% {
 		transform:rotate(0deg);
@@ -289,7 +242,7 @@ h1 {
 		transform:rotate(40deg);
 		}
   }
-
+/* De rode lightsaber terugkeer animatie */
 @keyframes roodsaberanimatieReverse {
 	0% {
 		transform:rotate(40deg);
@@ -301,3 +254,4 @@ h1 {
 		transform:rotate(0deg);
 		}
   }
+
