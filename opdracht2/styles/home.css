@@ -211,6 +211,8 @@ article img {
     margin-bottom: 1em;
     object-fit: cover;
     transition: 0.25s;
+    max-width: 100%;
+    /* Zorgt ervoor dat afbeeldingen niet te breed worden */
 }
 
 article img:hover {
