@@ -77,7 +77,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Er zijn genoeg mensen die van honden houden en graag een hond zouden willen hebben of zien, maar dat niet kunnen. Daarom is er nu Daily Dogs! Voel je je even down? Heb je een belangrijke meeting? Of werkt je code niet? of wil je gewoon even een hond zien, dan kan je naar Daily Dogs en kan je je dagelijkse dosis aan cute honden fotos binnenkrijgen. Nooit meer op google kijken en elke week dezelfde top resultaten zien. Daily Dogs maakt gebruik van een willekeurige honden kiezer waardoor je altijd een nieuwe hond ziet.
 
   ### Je ontwerp:
-  <img src="opdracht2_schets.jpg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/opdracht2_schets.jpg" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
