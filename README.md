@@ -15,7 +15,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
   1. STAR WARS font: STAR JEDI: https://www.dafont.com/star-jedi.font
-  2. Motion Blur voor inspiratie https://codepen.io/joshbader/pen/eYYLEY
+  2. Motion Blur voor inspiratie: https://codepen.io/joshbader/pen/eYYLEY
+  3. DOG API: https://dog.ceo/dog-api/
+  4. DOG API Vanilla JS voorbeeld: https://codepen.io/elliottlan/pen/MNEWNx
+
+Alle honden localen honden afbeeldingen zijn van mijzelf.
+Alle API honden fotos zijn van: https://dog.ceo/dog-api/
 
 
 
