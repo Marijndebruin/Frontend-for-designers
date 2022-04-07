@@ -9,7 +9,7 @@ var dogImages = [
     "Millou.png",
     "cursedFloor.png"
     ]
-
+    
 // Leuke honden namen!
 // Maxi en Millou RIP <3
 var dogNames = [
@@ -63,6 +63,9 @@ var yesButton = document.getElementById("yes");
 noButton.addEventListener("click",newDogNo);
 yesButton.addEventListener("click",newDogLike);
 
+
+// dit  even opruimen
+
 function newDogLike(){
     animatieLike();
     getRandomImage();
@@ -82,6 +85,7 @@ function newDogNo(){
 
 // De plus 1 functie, telt telkens 1 er bij als je een hond liked.
 function plusOne (){
+    // ++ is automatisch +1
     count += 1;
     console.log(count)
     document.getElementById("watchDogs").innerHTML = "Bekeken honden: " + count;
@@ -96,7 +100,9 @@ function animatieNo(){
 // Functie om de Like animatie te starten en daarna te verwijderen.
 function animatieLike(){
     var articleContainer = document.getElementById("article").className = 'animatieLike';
-    setTimeout(animatieRemove, 500);
+    article.addEventListener('animationend', () => {
+        animatieRemove();
+    })
 }
 
 // De animatie verwijder functie die word opgeroepen na x tijd 
@@ -131,6 +137,7 @@ function randomName (){
     
 // Button interacties
 // De app is te bedienen met arrow right en left.
+// Kijken naar js switchen cases.
 document.addEventListener("keydown", toetsIngedrukt);
 
 function toetsIngedrukt(event) {
@@ -183,3 +190,8 @@ function getRandomImage()
 // Gemaakt door Marijn de Bruin
 // https://github.com/Marijndebruin
 // https://marijndebruin.com
+
+
+// LI moeten buttons worden.
+// animationend
+// Disable button .disabled
