@@ -1,39 +1,41 @@
 <!doctype html>
 <html lang="nl">
-	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="Marijn de Bruin" content="DailyDogs">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;900&display=swap" rel="stylesheet"> 
     <link href="styles/home.css" rel="stylesheet">
  	 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
+	<title>DailyDogs | Marijn de Bruin</title>
 </head>
 
 <body>
 		<header>
 				<h1>Daily Dogs</h1>
-				<h3 id="watchDogs">Bekeken honden:</h3>
+				<h3 id="watchDogs">Like je eerste hond!</h3>
+				<button id="favo"><span id="hartje" class="heart"></span></button>
 		</header>
 		<main>
 			<article id="article">
-				<img id="dogImage" src="images/Floor.png" alt="floor" onclick="newDogLike()"> 
-				<!-- Beginnen met h2 en orderen met flex -->
 				<h2 id="dogName">Floor</h2>
 				<h3 id="username">DoggyLover2</h3>
+				<img id="dogImage" src="images/Floor.png" alt="floor" onclick="newDogLike()"> 
 			</article>
-			<nav>
-				<!-- nav moet menu tag -->
+			<menu>
 				<ul>
-					<li id="no">No</li>
-					<li id="yes">Love</li>
-					<!-- buttons in de LI --> 
+					<li id="no"><button id="buttonNo">No</button></li>
+					<li id="yes"><button id="buttonLike">Like</button></li>
 				</ul>
-			</nav>
+			</menu>
 		</main>
+		<section id="menuSection">
+			<h2>Jouw favorieten</h2>
+			<ul id="favoLijst">
+            </ul>
+		</section>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>

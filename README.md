@@ -18,6 +18,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Motion Blur voor inspiratie: https://codepen.io/joshbader/pen/eYYLEY
   3. DOG API: https://dog.ceo/dog-api/
   4. DOG API Vanilla JS voorbeeld: https://codepen.io/elliottlan/pen/MNEWNx
+  5. Heart pure CSS: https://css-tricks.com/hearts-in-html-and-css/
+  6. CSS Grid Guide: https://css-tricks.com/snippets/css/complete-guide-grid/
+  7. box alignment: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout
+  8. Favo lijst Sanne codepen: https://codepen.io/shooft/pen/popaXdY
+  9. add second class: https://www.codegrepper.com/code-examples/javascript/how+to+add+another+class+to+with+existing+class+in+javascript
+  10. animationend: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event
+  11. disabled button: https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button 
+
+
+
 
 Alle honden localen honden afbeeldingen zijn van mijzelf.
 Alle API honden fotos zijn van: https://dog.ceo/dog-api/

@@ -63,45 +63,90 @@ var yesButton = document.getElementById("yes");
 noButton.addEventListener("click",newDogNo);
 yesButton.addEventListener("click",newDogLike);
 
+// Favo lijst openen en dicht doen
 
-// dit  even opruimen
+var menuButton = document.getElementById("favo")
+var menuSection = document.getElementById("menuSection")
 
-function newDogLike(){
-    animatieLike();
+menuButton.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+	menuSection.classList.toggle("menuOpen");
+}
+
+
+// Opslaan in favo
+
+const favoH2 = document.getElementById("dogName")
+const favoH3 = document.getElementById("username")
+const favoImage = document.getElementById("dogImage")
+
+const favoLijst = document.getElementById("favoLijst")
+
+yesButton.addEventListener("click", voegTekstToeAanLijst);
+
+function voegTekstToeAanLijst() {
+	var cloneH2 = favoH2.cloneNode(true);
+    var cloneH3 = favoH3.cloneNode(true);
+    var cloneImage = favoImage.cloneNode(true);
+
+	var deNieuweLi = document.createElement("li");
+	
+	deNieuweLi.appendChild(cloneH2);
+    deNieuweLi.appendChild(cloneH3);
+    deNieuweLi.appendChild(cloneImage);
+	
+	favoLijst.appendChild(deNieuweLi);
+}
+
+
+
+function newDog(){
     getRandomImage();
     randomName();
     // randomPicture();
     randomUser();
+}
+
+
+function newDogLike(){
+    animatieLike();
+    newDog();
     plusOne();
 }
 
 function newDogNo(){
     animatieNo();
-    getRandomImage();
-    randomName();
-    // randomPicture();
-    randomUser();
+    newDog();
 }
+
 
 // De plus 1 functie, telt telkens 1 er bij als je een hond liked.
 function plusOne (){
-    // ++ is automatisch +1
-    count += 1;
+    count ++;
     console.log(count)
-    document.getElementById("watchDogs").innerHTML = "Bekeken honden: " + count;
+    document.getElementById("watchDogs").innerHTML = "Liked honden: " + count;
 }
 
 // functie om de NO animatie te starten en daarna te verwijderen.
 function animatieNo(){
-    var articleContainer = document.getElementById("article").className = 'animatieNo';
-    setTimeout(animatieRemove, 500);
+    document.getElementById("article").className = 'animatieNo';
+    document.getElementById("buttonNo").disabled = true;
+    article.addEventListener('animationend', () => {
+        document.getElementById("buttonNo").removeAttribute('disabled');
+        animatieRemove();
+    })
 }
 
 // Functie om de Like animatie te starten en daarna te verwijderen.
 function animatieLike(){
-    var articleContainer = document.getElementById("article").className = 'animatieLike';
+    document.getElementById("article").className = 'animatieLike';
+    document.getElementById("hartje").className += ' heartAnimation';
+    document.getElementById("buttonLike").disabled = true;
     article.addEventListener('animationend', () => {
+        document.getElementById("buttonLike").removeAttribute('disabled');
         animatieRemove();
+
     })
 }
 
@@ -110,6 +155,7 @@ function animatieRemove() {
     var articleContainer = document.getElementById("article")
     articleContainer.classList.remove("animatieLike");
     articleContainer.classList.remove("animatieNo");
+    document.getElementById("hartje").classList.remove('heartAnimation');
 }
 
 // Pakt een random naam uit de voorgeschreven array van users
@@ -184,14 +230,11 @@ function getRandomImage()
   image.src = url;
 }
 
+newDog();
+
 // Dit was mijn javascript bestand.
-// Neem een slokje koffie!
+// Neem een slokje koffie, of cola ;)
 
 // Gemaakt door Marijn de Bruin
 // https://github.com/Marijndebruin
 // https://marijndebruin.com
-
-
-// LI moeten buttons worden.
-// animationend
-// Disable button .disabled
